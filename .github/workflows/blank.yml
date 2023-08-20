@@ -38,3 +38,7 @@ jobs:
       - name: Run python3
         run:
           python3 main.py
+
+      - name: Echo secret
+        run:
+          echo ${{secrets.TEST_SECRET}}
